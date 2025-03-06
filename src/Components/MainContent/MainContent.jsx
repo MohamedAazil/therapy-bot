@@ -15,17 +15,19 @@ const MainContent = () => {
   return (
     <div className="main">
       <div className="nav">
-        <p style={{color:'white',fontWeight:'700'}}>Therapy Bot</p>
+        <p style={{ color: "white", fontWeight: "700" }}>Therapy Bot</p>
         <img src={assets.user_icon} alt="" />
       </div>
       <div className="main-container">
         {!showResult ? (
           <>
             <div className="greet">
-              <p>
+              {/* <p>
                 <span>Hello</span>
+              </p> */}
+              <p>
+                <span>Your feelings are valid. <br /> Help is available <br />You are loved <span style={{color:'red'}}> ♥️</span></span>
               </p>
-              <p><span>How can I help you?</span></p>
             </div>
           </>
         ) : (
@@ -57,7 +59,7 @@ const MainContent = () => {
               placeholder="Ask me anything..."
             />
             <div className="">
-              <img src={assets.gallery_icon} alt="" />
+              {/* <img src={assets.gallery_icon} alt="" /> */}
               <img src={assets.mic_icon} alt="" />
               <img src={assets.send_icon} alt="" onClick={() => onSent()} />
             </div>
