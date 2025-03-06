@@ -62,10 +62,10 @@ const MainContent = () => {
               <img src={assets.send_icon} alt="" onClick={() => onSent()} />
             </div>
           </div>
-          <p className="bottom-info">
+          {/* <p className="bottom-info">
             Therapy Bot may display inaccurate info. User's are required to verify
             facts and actions on their own
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
