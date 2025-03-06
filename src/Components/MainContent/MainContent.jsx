@@ -15,7 +15,7 @@ const MainContent = () => {
   return (
     <div className="main">
       <div className="nav">
-        <p>FitBot</p>
+        <p style={{color:'white',fontWeight:'700'}}>Therapy Bot</p>
         <img src={assets.user_icon} alt="" />
       </div>
       <div className="main-container">
@@ -23,27 +23,9 @@ const MainContent = () => {
           <>
             <div className="greet">
               <p>
-                <span>Hello, Mohamed</span>
+                <span>Hello</span>
               </p>
-              <p>How can I help you?</p>
-            </div>
-            <div className="cards">
-              <div className="card">
-                <p>Suggest tourist spots near me</p>
-                <img src={assets.compass_icon} alt="" />
-              </div>
-              <div className="card">
-                <p>Breiwfly summarize this concept</p>
-                <img src={assets.bulb_icon} alt="" />
-              </div>
-              <div className="card">
-                <p>Brainstorm team bonding activities</p>
-                <img src={assets.message_icon} alt="" />
-              </div>
-              <div className="card">
-                <p>Improve readability of the following code</p>
-                <img src={assets.code_icon} alt="" />
-              </div>
+              <p><span>How can I help you?</span></p>
             </div>
           </>
         ) : (
@@ -53,7 +35,7 @@ const MainContent = () => {
               <p>{recentPrompt}</p>
             </div>
             <div className="result-data">
-              <img src={assets.gemini_icon} alt="" />
+              {/* <img src={assets.gemini_icon} alt="" /> */}
               {loading ? (
                 <div className="loader">
                   <hr />
@@ -81,7 +63,7 @@ const MainContent = () => {
             </div>
           </div>
           <p className="bottom-info">
-            FitBot may display inaccurate info. User's are required to verify
+            Therapy Bot may display inaccurate info. User's are required to verify
             facts and actions on their own
           </p>
         </div>
